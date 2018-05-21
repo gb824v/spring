@@ -1,0 +1,8 @@
+            <!-- BEGIN AS response flow Template -->
+            <Step>
+                <Name>getBlackListedResponseElements</Name>
+            </Step>
+            <Step>
+                <Name>Check-Blacklisted-ResponseElements</Name>
+            </Step>
+            <!-- END AS response flow Template -->

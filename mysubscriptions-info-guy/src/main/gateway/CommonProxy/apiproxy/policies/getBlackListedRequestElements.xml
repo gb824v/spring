@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="getBlackListedRequestElements" mapIdentifier="security-blacklist">
+    <Get assignTo="blackListedRequestHeaders">
+        <Key>
+            <Parameter>requestHeaders</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="blackListedQueryParams">
+        <Key>
+            <Parameter>queryParams</Parameter>
+        </Key>
+    </Get>
+    <DisplayName>getBlackListedRequestElements</DisplayName>
+</KeyValueMapOperations>

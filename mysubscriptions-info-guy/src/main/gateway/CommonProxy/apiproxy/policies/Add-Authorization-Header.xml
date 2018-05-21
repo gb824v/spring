@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<JavaCallout async="false" continueOnError="false" enabled="true" name="Add-Authorization-Header">
+    <DisplayName>Add-Authorization-Header</DisplayName>
+    <Properties>
+        <Property name="algorithm">{jwt.algorithm}</Property>
+        <Property name="secret-key">{jwt.secret}</Property>
+        <Property name="subject">{jwt.subject}</Property>
+        <Property name="claim_roles">{jwt.claim_role}</Property>
+        <Property name="expiresIn">{jwt.expiresInSeconds}</Property>
+    </Properties>
+    <ClassName>com.apigee.callout.jwtsigned.JwtCreatorCallout</ClassName>
+    <ResourceURL>java://apigee-edge-callout-jwt-signed-1.0.5.jar</ResourceURL>
+</JavaCallout>

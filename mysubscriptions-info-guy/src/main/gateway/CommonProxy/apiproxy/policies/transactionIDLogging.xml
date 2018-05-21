@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MessageLogging async="false" continueOnError="false" enabled="true" name="transactionIDLogging">
+    <File>
+        <Message>{system.time}.{apiproxy.name}.{environment.name} - ServiceameNamespace: {serviceNameDotNamespace} RouteOffer: {defaultRouteoffer} Basepath: {proxy.basepath} TransactionID: {request.header.X-ATT-TransactionId} Start: {client.received.start.timestamp} End: {client.sent.end.timestamp}</Message>
+        <FileName>transactionID.log</FileName>
+        <FileRotationOptions rotateFileOnStartup="true">
+            <FileRotationType>SIZE</FileRotationType>
+            <MaxFileSizeInMB>10</MaxFileSizeInMB>
+            <MaxFilesToRetain>3</MaxFilesToRetain>
+        </FileRotationOptions>
+    </File>
+    <logLevel>INFO</logLevel>
+</MessageLogging>

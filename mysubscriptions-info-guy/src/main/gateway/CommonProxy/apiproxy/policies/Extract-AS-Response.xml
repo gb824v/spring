@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="Extract-AS-Response">
+    <DisplayName>Extract AS Response</DisplayName>
+    <Properties/>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <JSONPayload>
+        <Variable name="asResponseStatus">
+            <JSONPath>$.responseStatus.status</JSONPath>
+        </Variable>
+        <Variable name="asAccountId">
+            <JSONPath>$.accountId</JSONPath>
+        </Variable>
+        <Variable name="asProfileId">
+            <JSONPath>$.profileId</JSONPath>
+        </Variable>
+        <Variable name="asAuthNType">
+            <JSONPath>$.authnType</JSONPath>
+        </Variable>
+        <Variable name="asAuthGroups">
+            <JSONPath>$.authGroups</JSONPath>
+        </Variable>
+        <Variable name="asServiceAccess">
+            <JSONPath>$.serviceAccess</JSONPath>
+        </Variable>
+        <Variable name="asDeviceId">
+            <JSONPath>$.deviceId</JSONPath>
+        </Variable>
+        <Variable name="asDlProfileId">
+            <JSONPath>$.dlprofileID</JSONPath>
+        </Variable>
+        <Variable name="asDeviceType">
+            <JSONPath>$.deviceType</JSONPath>
+        </Variable>
+        <Variable name="asVhProfileId">
+            <JSONPath>$.vhprofileID</JSONPath>
+        </Variable>
+        <Variable name="asPartnerProfileId">
+            <JSONPath>$.partnerProfileID</JSONPath>
+        </Variable>
+        <Variable name="asEtoken">
+            <JSONPath>$.etoken</JSONPath>
+        </Variable>
+        <Variable name="asServiceZip">
+            <JSONPath>$.serviceZip</JSONPath>
+        </Variable>
+        <Variable name="asClientId">
+            <JSONPath>$.clientId</JSONPath>
+        </Variable>
+        <Variable name="asAccountToken">
+            <JSONPath>$.accountToken</JSONPath>
+        </Variable>
+		<Variable name="asSiteId">
+            <JSONPath>$.siteId</JSONPath>
+        </Variable>
+        <Variable name="asSiteUserId">
+            <JSONPath>$.siteUserId</JSONPath>
+        </Variable>
+        <Variable name="asSignature">
+            <JSONPath>$.signature</JSONPath>
+        </Variable>
+        <Variable name="asResponseBody">
+            <JSONPath>$.</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <Source clearPayload="true">calloutResponse</Source>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <VariablePrefix>apigee</VariablePrefix>
+</ExtractVariables>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="getBlackListedResponseElements" mapIdentifier="security-blacklist">
+    <Get assignTo="blackListedResponseHeaders">
+        <Key>
+            <Parameter>responseHeaders</Parameter>
+        </Key>
+    </Get>
+    <DisplayName>getBlackListedResponseElements</DisplayName>
+</KeyValueMapOperations>

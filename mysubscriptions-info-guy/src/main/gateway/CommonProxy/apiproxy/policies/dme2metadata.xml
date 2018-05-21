@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="true" enabled="true" name="dme2metadata">
+    <AssignTo createNew="true" transport="http" type="request">dme2routeinfo</AssignTo>
+    <DisplayName>dme2metadata</DisplayName>
+    <AssignVariable>
+        <Name>serviceNameDotNamespace</Name>
+        <Value>info.profile-mysubscriptions</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>baseContextPath</Name>
+        <Value/>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>defaultVersion</Name>
+        <Value>1</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>defaultRouteoffer</Name>
+        <Value>master</Value>
+    </AssignVariable>
+    <!--
+    <AssignVariable>
+        <Name>defaultRouteoffer</Name>
+        <Value>BLUE</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>maxThreads</Name>
+        <Value>MyMaxThreads</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>minThreads</Name>
+        <Value>MyMinThreads</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>envContext</Name>
+        <Value>MyEnvContext</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>aftEnv</Name>
+        <Value>MyAftEnv</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>endpointReadTO</Name>
+        <Value>MyTimout</Value>
+    </AssignVariable>
+    -->
+</AssignMessage>

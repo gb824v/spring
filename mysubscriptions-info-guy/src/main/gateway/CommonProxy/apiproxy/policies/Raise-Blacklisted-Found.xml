@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="Raise-Blacklisted-Found">
+    <DisplayName>Raise Blacklisted Found</DisplayName>
+    <Properties/>
+    <Set>
+        <Headers/>
+        <Payload contentType="application/json" variablePrefix="@" variableSuffix="#">{"apigeeResponse":{"status":"failure","proxyName":"@apiproxy.name#","errorText":"Invalid request"}}</Payload>
+        <StatusCode>403</StatusCode>
+        <ReasonPhrase>Invalid request</ReasonPhrase>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="Use-eToken">
+    <DisplayName>Use eToken</DisplayName>
+    <AssignVariable>
+        <Name>useEtoken</Name>
+        <Value>false</Value>
+    </AssignVariable>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

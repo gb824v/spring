@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations name="getDME2Env" mapIdentifier="dme2Env">
+    <Scope>environment</Scope>
+    <Get assignTo="envContext" index="1">
+        <Key>
+            <Parameter>envCon</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="aftEnv" index="1">
+        <Key>
+            <Parameter>aftEnv</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="dme2ManUrl" index="1">
+        <Key>
+            <Parameter>dme2ManUrl</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="apigeeLat" index="1">
+        <Key>
+            <Parameter>apigeeLatitude</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="apigeeLong" index="1">
+        <Key>
+            <Parameter>apigeeLongitude</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="endpointReadTO" index="1">
+        <Key>
+            <Parameter>endpointReadTO</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="defaultRouteoffer" index="1">
+        <Key>
+            <Parameter>defaultRouteoffer</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="authServiceRouteOffer" index="1">
+        <Key>
+            <Parameter>authServiceRouteOffer</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="defaultVersion" index="1">
+        <Key>
+            <Parameter>defaultVersion</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="authServiceNameDotNS" index="1">
+        <Key>
+            <Parameter>authServiceNameNS</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="authServiceBasePath" index="1">
+        <Key>
+            <Parameter>authServiceBasePath</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="maxThreads" index="1">
+        <Key>
+            <Parameter>maxThreads</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="minThreads" index="1">
+        <Key>
+            <Parameter>minThreads</Parameter>
+        </Key>
+    </Get>
+    <Get assignTo="authVersion" index="1">
+        <Key>
+            <Parameter>authVersion</Parameter>
+        </Key>
+    </Get>
+</KeyValueMapOperations>

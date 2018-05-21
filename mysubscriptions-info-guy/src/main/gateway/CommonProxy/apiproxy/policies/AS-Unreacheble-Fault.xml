@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AS-Unreacheble-Fault">
+    <DisplayName>AS Unreacheble Fault</DisplayName>
+    <Properties/>
+    <Set>
+        <Headers/>
+        <Payload contentType="application/json" variablePrefix="@" variableSuffix="#">{"apigeeResponse":{"status":"failure","proxyName":"@apiproxy.name#","errorText":"Execution of ServiceCallout AS-Callout failed. Reason: timeout occurred in AS-Callout"}}</Payload>
+        <StatusCode>503</StatusCode>
+        <ReasonPhrase>Service Unavailable</ReasonPhrase>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>
