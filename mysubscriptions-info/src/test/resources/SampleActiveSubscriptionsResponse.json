@@ -1,0 +1,49 @@
+{
+    "header": {
+        "code": "0",
+        "message": "Success",
+        "systemTime": 1522269349913
+    },
+    "data": {
+        "nextBillingDate": "1522756800000",
+        "nextBillingAmount": "70.00",
+        "subscriptions": [
+            {
+                "sku": "BASE-GOBIG-201610",
+                "startDate": "1522108800000",
+                "isBasePackage": true,
+                "name": "Go Big",
+                "status": "Active",
+                "isFreeTrial": true,
+                "retailPrice": "60.00"
+            },
+            {
+                "sku": "BOLT-HBO-201610",
+                "startDate": "1522108800000",
+                "isBasePackage": false,
+                "name": "HBO",
+                "status": "Active",
+                "isFreeTrial": true,
+                "retailPrice": "5.00"
+            },
+            {
+                "sku": "BOLT-CDVRINCL-201710",
+                "startDate": "1522108800000",
+                "isBasePackage": false,
+                "name": "True Cloud DVR <sub>BETA</sub> (20 hours)",
+                "status": "Active",
+                "isFreeTrial": false,
+                "retailPrice": "0.00"
+            },
+            {
+                "sku": "BOLT-3RDSTREAM-201710",
+                "startDate": "1522108800000",
+                "isBasePackage": false,
+                "name": "3 streams",
+                "status": "Active",
+                "isFreeTrial": true,
+                "retailPrice": "5.00"
+            }
+        ]
+    }
+}
