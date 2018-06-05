@@ -1,17 +1,16 @@
 package com.att.eg.profile.mysubscriptions.info.service.rs;
 
+import com.att.eg.monitoring.yawl.MetaBuilder;
+import com.att.eg.monitoring.yawl.YawlLogger;
+import com.att.eg.profile.mysubscriptions.info.model.Status;
+import com.att.eg.profile.mysubscriptions.info.model.SubscriptionComparisonResponse;
+import com.att.eg.profile.mysubscriptions.info.service.MySubscriptionsService;
+import com.att.eg.profile.mysubscriptions.info.service.SubscriptionComparisonService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
-import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.Response;
-
-import com.att.eg.monitoring.yawl.YawlLogger;
-
-import com.att.eg.profile.mysubscriptions.info.common.dme.DME;
-import com.att.eg.profile.mysubscriptions.info.model.Status;
-import com.att.eg.profile.mysubscriptions.info.service.ChannelsDmeProvider;
-import com.att.eg.profile.mysubscriptions.info.service.MySubscriptionsService;
 
 @Controller
 public class RestServiceImpl implements RestService {
@@ -19,11 +18,11 @@ public class RestServiceImpl implements RestService {
 
     @Autowired
     private MySubscriptionsService service;
-    @Autowired
-    private ChannelsDmeProvider channelsProvider;
 
-    public RestServiceImpl() {
-        // needed for autowiring
+    private SubscriptionComparisonService subscriptionComparisonService;
+
+    public RestServiceImpl(@Autowired SubscriptionComparisonService subscriptionComparisonService) {
+        this.subscriptionComparisonService = subscriptionComparisonService;
     }
 
     @Override
@@ -33,12 +32,22 @@ public class RestServiceImpl implements RestService {
 
     @Override
     public Response getCarousel(String profileId, String secureToken, String uxReference) {
+        log.info(Status.OK, new MetaBuilder()
+                .setReason("debug getCarousel:")
+                .setKeyAndValue("profileId", profileId)
+                .create());
         log.info(Status.OK, "profileId", profileId, "uxReference", uxReference);
         return service.getCarousel(profileId, secureToken, uxReference);
     }
 
     @Override
-    public DME.Response getChannels(HttpHeaders headers) {
-        return channelsProvider.getChannels(headers);
+    public Response getSubscriptionComparison(String profileId, String secureToken, String routeOffer, String subscriptionId, String fisProperties) {
+        log.info(Status.OK, new MetaBuilder()
+                .setReason("debug getSubscriptionComparison:")
+                .setKeyAndValue("profileId", profileId)
+                .create());
+        SubscriptionComparisonResponse response = subscriptionComparisonService.getSubscriptionComparison(profileId, secureToken, subscriptionId, routeOffer, fisProperties);
+        return Response.ok(response).build();
     }
+
 }

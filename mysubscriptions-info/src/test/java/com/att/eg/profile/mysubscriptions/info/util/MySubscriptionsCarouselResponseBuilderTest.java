@@ -162,9 +162,9 @@ public class MySubscriptionsCarouselResponseBuilderTest {
 
     @Test
     public void packageCarouselReturnsDataCorrectlyWithSecureToken() {
-        givenResponseForProfileId(mockResponses.getMockSessionResponse(),
-                mockResponses.getMockProductsResponse(),
-                mockResponses.getMockActiveSubscriptionsResponse());
+        givenResponseForProfileId(mockResponses.getMockSessionResponse(MockResponses.SAMPLE_SESSION_RESPONSE),
+                mockResponses.getMockProductsResponse(MockResponses.SAMPLE_PRODUCTS_RESPONSE),
+                mockResponses.getMockActiveSubscriptionsResponse(MockResponses.SAMPLE_ACTIVE_SUBSCRIPTIONS_RESPONSE));
         givenCarouselTypeIs(UxReference.MYSUBSCRIPTIONS_CHANNELPACKAGESREFERENCE);
         whenResponseIsBuiltUsingSecureToken();
         thenResourcesSizeIs(4);
@@ -190,10 +190,39 @@ public class MySubscriptionsCarouselResponseBuilderTest {
     }
 
     @Test
+    public void packageCarouselReturnsOnlyOneCurrentPackage() {
+        givenResponseForProfileId(mockResponses.getMockSessionResponse(MockResponses.SAMPLE_SESSION_RESPONSE),
+                mockResponses.getMockProductsResponse(MockResponses.SAMPLE_PRODUCTS_RESPONSE),
+                mockResponses.getMockActiveSubscriptionsResponse(MockResponses.SAMPLE_FINAL_BILL_ACTIVE_SUBSCRIPTIONS_RESPONSE));
+        givenCarouselTypeIs(UxReference.MYSUBSCRIPTIONS_CHANNELPACKAGESREFERENCE);
+        whenResponseIsBuiltUsingSecureToken();
+        thenResourcesSizeIs(4);
+        thenResourceParameterEquals(0, "displayName", "Live a Little");
+        thenResourceParameterEquals(0, "isCurrent", false);
+        thenResourceParameterEquals(0, "priceUsd", "35.00");
+        thenResourceParameterEquals(0, "channelCount", "60+ Live Channels");
+
+        thenResourceParameterEquals(1, "displayName", "Just Right");
+        thenResourceParameterEquals(1, "isCurrent", true);
+        thenResourceParameterEquals(1, "priceUsd", "50.00");
+        thenResourceParameterEquals(1, "channelCount", "80+ Live Channels");
+
+        thenResourceParameterEquals(2, "displayName", "Go Big");
+        thenResourceParameterEquals(2, "isCurrent", false);
+        thenResourceParameterEquals(2, "priceUsd", "60.00");
+        thenResourceParameterEquals(2, "channelCount", "100+ Live Channels");
+
+        thenResourceParameterEquals(3, "displayName", "Gotta Have It");
+        thenResourceParameterEquals(3, "isCurrent", false);
+        thenResourceParameterEquals(3, "priceUsd", "70.00");
+        thenResourceParameterEquals(3, "channelCount", "120+ Live Channels");
+    }
+
+    @Test
     public void addonsCarouselReturnsDataCorrectlyWithSecureToken() {
-        givenResponseForProfileId(mockResponses.getMockSessionResponse(),
-                mockResponses.getMockProductsResponse(),
-                mockResponses.getMockActiveSubscriptionsResponse());
+        givenResponseForProfileId(mockResponses.getMockSessionResponse(MockResponses.SAMPLE_SESSION_RESPONSE),
+                mockResponses.getMockProductsResponse(MockResponses.SAMPLE_PRODUCTS_RESPONSE),
+                mockResponses.getMockActiveSubscriptionsResponse(MockResponses.SAMPLE_ACTIVE_SUBSCRIPTIONS_RESPONSE));
         givenCarouselTypeIs(UxReference.MYSUBSCRIPTIONS_ADDONSREFERENCE);
         whenResponseIsBuiltUsingSecureToken();
         //only active subscriptions counts for add-on
@@ -205,9 +234,9 @@ public class MySubscriptionsCarouselResponseBuilderTest {
 
     @Test
     public void cdvrCarouselReturnsDataCorrectlyWithSecureToken() {
-        givenResponseForProfileId(mockResponses.getMockSessionResponse(),
-                                    mockResponses.getMockProductsResponse(),
-                                    mockResponses.getMockActiveSubscriptionsResponse());
+        givenResponseForProfileId(mockResponses.getMockSessionResponse(MockResponses.SAMPLE_SESSION_RESPONSE),
+                                    mockResponses.getMockProductsResponse(MockResponses.SAMPLE_PRODUCTS_RESPONSE),
+                                    mockResponses.getMockActiveSubscriptionsResponse(MockResponses.SAMPLE_ACTIVE_SUBSCRIPTIONS_RESPONSE));
         givenCarouselTypeIs(UxReference.MYSUBSCRIPTIONS_TRUECLOUDSTORAGEREFERENCE);
         whenResponseIsBuiltUsingSecureToken();
         thenResourcesSizeIs(1);

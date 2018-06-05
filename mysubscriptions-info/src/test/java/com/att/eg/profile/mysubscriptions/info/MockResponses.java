@@ -14,10 +14,15 @@ public class MockResponses {
 
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
-    public ProductsResponse getMockProductsResponse() {
+    public static final String SAMPLE_ACTIVE_SUBSCRIPTIONS_RESPONSE = "SampleActiveSubscriptionsResponse";
+    public static final String SAMPLE_FINAL_BILL_ACTIVE_SUBSCRIPTIONS_RESPONSE = "SampleFinalBillActiveSubscriptionsResponse";
+    public static final String SAMPLE_PRODUCTS_RESPONSE = "SampleProductsResponse";
+    public static final String SAMPLE_SESSION_RESPONSE = "SampleSessionResponse";
+
+    public ProductsResponse getMockProductsResponse(String name) {
         String body = "";
         try {
-            body = new String(Files.readAllBytes(Paths.get("src/test/resources/SampleProductsResponse.json")), StandardCharsets.UTF_8);
+            body = new String(Files.readAllBytes(Paths.get("src/test/resources/"+name+".json")), StandardCharsets.UTF_8);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -31,10 +36,10 @@ public class MockResponses {
         return productsResponse;
     }
 
-    public SessionResponse getMockSessionResponse() {
+    public SessionResponse getMockSessionResponse(String name) {
         String body = "";
         try {
-            body = new String(Files.readAllBytes(Paths.get("src/test/resources/SampleSessionResponse.json")), StandardCharsets.UTF_8);
+            body = new String(Files.readAllBytes(Paths.get("src/test/resources/"+name+".json")), StandardCharsets.UTF_8);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -48,10 +53,10 @@ public class MockResponses {
         return response;
     }
 
-    public ActiveSubscriptionsResponse getMockActiveSubscriptionsResponse() {
+    public ActiveSubscriptionsResponse getMockActiveSubscriptionsResponse(String name) {
         String body = "";
         try {
-            body = new String(Files.readAllBytes(Paths.get("src/test/resources/SampleActiveSubscriptionsResponse.json")), StandardCharsets.UTF_8);
+            body = new String(Files.readAllBytes(Paths.get("src/test/resources/"+name+".json")), StandardCharsets.UTF_8);
         } catch (IOException e) {
             e.printStackTrace();
         }

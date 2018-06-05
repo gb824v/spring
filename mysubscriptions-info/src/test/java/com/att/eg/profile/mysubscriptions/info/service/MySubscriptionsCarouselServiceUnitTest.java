@@ -1,11 +1,7 @@
 package com.att.eg.profile.mysubscriptions.info.service;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.mockito.Matchers.any;
-import static org.mockito.Matchers.eq;
-import static org.mockito.Mockito.doReturn;
-
+import com.att.ajsc.common.RequestScopeModifier;
+import com.att.eg.profile.mysubscriptions.info.Application;
 import com.att.eg.profile.mysubscriptions.info.model.AddOn;
 import com.att.eg.profile.mysubscriptions.info.model.AddOnsInfo;
 import com.att.eg.profile.mysubscriptions.info.model.BasePackageInfo;
@@ -16,7 +12,9 @@ import com.att.eg.profile.mysubscriptions.info.model.UxReference;
 import com.att.eg.profile.mysubscriptions.info.util.CarouselItemConverter;
 import com.att.eg.profile.mysubscriptions.info.util.MySubscriptionsCarouselResponseBuilder;
 import com.att.eg.profile.mysubscriptions.info.util.MySubscriptionsCarouselResponseBuilderImpl;
+import com.att.eg.profile.mysubscriptions.info.util.MySubscriptionsInfoResponseBuilder;
 import com.att.eg.profile.mysubscriptions.info.util.ResponseBuilderUtil;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -31,9 +29,12 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.ws.rs.core.Response;
-import com.att.ajsc.common.RequestScopeModifier;
-import com.att.eg.profile.mysubscriptions.info.Application;
-import com.att.eg.profile.mysubscriptions.info.util.MySubscriptionsInfoResponseBuilder;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.mockito.Matchers.any;
+import static org.mockito.Matchers.eq;
+import static org.mockito.Mockito.doReturn;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = { Application.class, RequestScopeModifier.class }, webEnvironment=WebEnvironment.DEFINED_PORT)

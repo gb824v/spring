@@ -1,10 +1,9 @@
 package com.att.eg.profile.mysubscriptions.info.service;
 
 import com.att.eg.monitoring.yawl.MetaBuilder;
+import com.att.eg.profile.mysubscriptions.info.adapters.ChannelsAdapterImpl;
 import com.att.eg.profile.mysubscriptions.info.model.MySubscriptionsCarouselResponse;
 import com.att.eg.profile.mysubscriptions.info.model.UxReference;
-import com.att.eg.profile.mysubscriptions.info.util.MySubscriptionsCarouselResponseBuilder;
-import com.att.eg.profile.mysubscriptions.info.util.ResponseBuilderUtil;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,7 +13,9 @@ import javax.ws.rs.core.Response;
 import com.att.eg.monitoring.yawl.YawlLogger;
 import com.att.eg.profile.mysubscriptions.info.model.MySubscriptionsInfoResponse;
 import com.att.eg.profile.mysubscriptions.info.model.Status;
+import com.att.eg.profile.mysubscriptions.info.util.MySubscriptionsCarouselResponseBuilder;
 import com.att.eg.profile.mysubscriptions.info.util.MySubscriptionsInfoResponseBuilder;
+import com.att.eg.profile.mysubscriptions.info.util.ResponseBuilderUtil;
 
 
 @Service
@@ -22,6 +23,8 @@ public class MySubscriptionsServiceImpl implements MySubscriptionsService {
     private final YawlLogger log = new YawlLogger(MySubscriptionsServiceImpl.class);
     private MySubscriptionsInfoResponseBuilder infoResponseBuilder;
     private MySubscriptionsCarouselResponseBuilder carouselResponseBuilder;
+    @Autowired
+    ChannelsAdapterImpl channelsAdapterImpl;
 
     @Autowired
     public MySubscriptionsServiceImpl(MySubscriptionsInfoResponseBuilder infoResponseBuilder,

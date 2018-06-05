@@ -8,6 +8,7 @@ import com.att.eg.profile.mysubscriptions.info.service.QPUMSClient;
 import com.att.eg.profile.mysubscriptions.info.util.MySubscriptionsCarouselResponseBuilder;
 import com.att.eg.profile.mysubscriptions.info.util.MySubscriptionsInfoResponseBuilder;
 import com.att.eg.profile.mysubscriptions.info.util.ResponseBuilderUtil;
+
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.springframework.context.annotation.Bean;
@@ -21,19 +22,19 @@ public class MockProvider {
 	//Tested class should be instantiated in test and injected with auto-wired mocks
 
 	@Mock
-	MySubscriptionsInfoResponseBuilder infoBuilder = Mockito.mock(MySubscriptionsInfoResponseBuilder.class);
+    MySubscriptionsInfoResponseBuilder infoBuilder = Mockito.mock(MySubscriptionsInfoResponseBuilder.class);
 
 	@Mock
-	MySubscriptionsCarouselResponseBuilder carouselBuilder = Mockito.mock(MySubscriptionsCarouselResponseBuilder.class);
+    MySubscriptionsCarouselResponseBuilder carouselBuilder = Mockito.mock(MySubscriptionsCarouselResponseBuilder.class);
 
 	@Mock
     CouchBaseDAO<EProfile> dao = Mockito.mock(CouchBaseDAO.class);
 
 	@Mock
-	QPUMSClient qpumsClient = Mockito.mock(QPUMSClient.class);
+    QPUMSClient qpumsClient = Mockito.mock(QPUMSClient.class);
 
 	@Mock
-	ResponseBuilderUtil responseBuilderUtil = Mockito.mock(ResponseBuilderUtil.class);
+    ResponseBuilderUtil responseBuilderUtil = Mockito.mock(ResponseBuilderUtil.class);
 
 	@Bean
 	public CouchBaseDAO<EProfile> couchBaseEProfileDao() {

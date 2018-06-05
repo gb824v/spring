@@ -1,21 +1,5 @@
 package com.att.eg.profile.mysubscriptions.info.service;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.Entity;
-import javax.ws.rs.client.Invocation;
-import javax.ws.rs.client.WebTarget;
-
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mockito;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.annotation.DirtiesContext;
-import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.junit4.SpringRunner;
-
 import com.att.ajsc.common.RequestScopeModifier;
 import com.att.eg.profile.mysubscriptions.info.Application;
 import com.att.eg.profile.mysubscriptions.info.MockResponses;
@@ -25,6 +9,22 @@ import com.att.eg.profile.mysubscriptions.info.model.ProductsResponse;
 import com.att.eg.profile.mysubscriptions.info.model.SessionResponse;
 import com.att.eg.profile.mysubscriptions.info.model.Subscription;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mockito;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.annotation.DirtiesContext;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.Entity;
+import javax.ws.rs.client.Invocation;
+import javax.ws.rs.client.WebTarget;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = {Application.class, RequestScopeModifier.class}, webEnvironment=SpringBootTest.WebEnvironment.DEFINED_PORT)
@@ -54,7 +54,7 @@ public class QPUMSClientTest {
 
     @Test
     public void testGetProductsShouldReturnAtleastOneBasePackage() {
-        ProductsResponse productsResponse = mockResponses.getMockProductsResponse();
+        ProductsResponse productsResponse = mockResponses.getMockProductsResponse(MockResponses.SAMPLE_PRODUCTS_RESPONSE);
         setUpMocks(ProductsResponse.class, productsResponse);
         ProductsResponse response = qpumsClient.getProducts();
         assertNotNull(response);
@@ -70,7 +70,7 @@ public class QPUMSClientTest {
     @Test
     public void testGetActiveSubscriptionsShouldReturnAtleastOneBasePackage() {
 
-        ActiveSubscriptionsResponse activeSubscriptionsResponse = mockResponses.getMockActiveSubscriptionsResponse();
+        ActiveSubscriptionsResponse activeSubscriptionsResponse = mockResponses.getMockActiveSubscriptionsResponse(MockResponses.SAMPLE_ACTIVE_SUBSCRIPTIONS_RESPONSE);
         setUpMocks(ActiveSubscriptionsResponse.class, activeSubscriptionsResponse);
         ActiveSubscriptionsResponse activeSubscriptionsResponse1 = qpumsClient.getActiveSubscriptions("myString");
         assertNotNull(activeSubscriptionsResponse1);
@@ -85,7 +85,7 @@ public class QPUMSClientTest {
 
     @Test
     public void testGetSessionShouldReturnCorrectSessionIdWhenResponseIsMockedFromSampleResponseJson() {
-        SessionResponse sessionResponse = mockResponses.getMockSessionResponse();
+        SessionResponse sessionResponse = mockResponses.getMockSessionResponse(MockResponses.SAMPLE_SESSION_RESPONSE);
         setUpMocks(SessionResponse.class, sessionResponse);
         SessionResponse sessionResponse1 = qpumsClient.getSession("canBeAnyString");
         assertNotNull(sessionResponse1);

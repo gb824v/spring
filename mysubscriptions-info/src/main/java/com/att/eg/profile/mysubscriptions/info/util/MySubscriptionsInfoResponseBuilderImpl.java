@@ -1,9 +1,5 @@
 package com.att.eg.profile.mysubscriptions.info.util;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
 import com.att.ajsc.common.couchbase.repository.impl.CouchBaseDAO;
 import com.att.eg.monitoring.yawl.MetaBuilder;
 import com.att.eg.monitoring.yawl.YawlLogger;
@@ -20,9 +16,14 @@ import com.att.eg.profile.mysubscriptions.info.model.Status;
 import com.att.eg.profile.mysubscriptions.info.model.Subscription;
 import com.att.eg.profile.mysubscriptions.info.model.SubscriptionData;
 import com.att.eg.profile.mysubscriptions.info.service.QPUMSClient;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class MySubscriptionsInfoResponseBuilderImpl implements MySubscriptionsInfoResponseBuilder{
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+public class MySubscriptionsInfoResponseBuilderImpl implements MySubscriptionsInfoResponseBuilder {
 
     private final YawlLogger log = new YawlLogger(MySubscriptionsInfoResponseBuilderImpl.class);
 
@@ -96,22 +97,27 @@ public class MySubscriptionsInfoResponseBuilderImpl implements MySubscriptionsIn
         String nextBillingAmount = subscriptionData.getNextBillingAmount();
         List<Subscription> subscriptions = subscriptionData.getSubscriptions();
         List<AddOn> addOns = new ArrayList<>();
-        float totalAddOnsPrice = 0;
+        double totalAddOnsPrice = 0.00;
+        int addOnsCount = 0;   
         for(Subscription subscription : subscriptions) {
             String sku = subscription.getSku();
             Product product = skuProductMap.get(sku);
+            boolean isActive = responseBuilderUtil.isActive(subscription);
             if (product.isBasicService()) {
-                basePackageInfo.setDisplayName(product.getDisplayName());
-                basePackageInfo.setPriceUsd(subscription.getRetailPrice());
-                String channelCount = responseBuilderUtil.parseChannelCount(product.getDescription());
-                basePackageInfo.setChannelCount(channelCount);
+				if(isActive) {
+					basePackageInfo.setDisplayName(product.getDisplayName());
+					basePackageInfo.setPriceUsd(subscription.getRetailPrice());
+					String channelCount = responseBuilderUtil.parseChannelCount(product.getDescription());
+					basePackageInfo.setChannelCount(channelCount);
+				}
             } else {
                 String category = product.getCategory();
                 switch (category) {
                     case "Subscription Channels":
-						AddOn addOn = buildAddOn(subscription, product);
-                        totalAddOnsPrice += Float.parseFloat(addOn.getPriceUsd());
+						AddOn addOn = buildAddOn(subscription, product, isActive);
                         addOns.add(addOn);
+                        totalAddOnsPrice+= calculateAddOnPrice(addOn);
+                        addOnsCount += countAddOn(isActive);
                         break;
                     case "DVR":
                         cDvrInfo.setAvailableHours(product.getStorageCapacity() + " Hours");
@@ -127,20 +133,28 @@ public class MySubscriptionsInfoResponseBuilderImpl implements MySubscriptionsIn
             }
         }
         addOnsInfo.setAddOns(addOns.toArray(new AddOn[0]));
-        addOnsInfo.setAddOnsCount(addOns.size() + " Packages");
-        addOnsInfo.setTotalPriceUsd(Float.toString(totalAddOnsPrice));
+        addOnsInfo.setAddOnsCount(addOnsCount + " Packages");
+        addOnsInfo.setTotalPriceUsd(String.format("%.2f", totalAddOnsPrice));
         //get color code based on base package name
         ColorCode colorCode = colorCodeBuilder.buildColorCode(basePackageInfo.getDisplayName());
         basePackageInfo.setColorCode(colorCode);
-
         return new MySubscriptionsInfoResponse(basePackageInfo, addOnsInfo, cDvrInfo, nextBillingAmount);
 
     }
 
-	private AddOn buildAddOn(Subscription subscription, Product product) {
+	private int countAddOn(boolean active) {
+        return active ? 1 : 0; 
+	}
+
+	private double calculateAddOnPrice(AddOn addOn) {
+		return addOn.isActive() ? Double.parseDouble(addOn.getPriceUsd()) : 0.00;
+	}
+
+	private AddOn buildAddOn(Subscription subscription, Product product, boolean isActive) {
 		AddOn addOn = new AddOn();
 		addOn.setDisplayName(product.getDisplayName());
 		addOn.setPriceUsd(subscription.getRetailPrice());
+		addOn.setActive(isActive);
 		return addOn;
 	}
 

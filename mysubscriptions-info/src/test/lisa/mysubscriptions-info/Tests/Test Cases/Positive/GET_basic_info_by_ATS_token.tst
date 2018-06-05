@@ -4,7 +4,7 @@
 
 <meta>
    <create version="9.5.1" buildNumber="9.5.1.6" author="admin" date="04/16/2018" host="teamzombie-VirtualBox" />
-   <lastEdited version="9.5.1" buildNumber="9.5.1.6" author="admin" date="05/11/2018" host="teamzombie-VirtualBox" />
+   <lastEdited version="9.5.1" buildNumber="9.5.1.6" author="admin" date="05/22/2018" host="teamzombie-VirtualBox" />
 </meta>
 
 <id>B9E1599E524311E8BE570242B9154533</id>
@@ -77,7 +77,6 @@
 </CheckResult>
 
 <url>{{protocol}}://{{kubeHost}}/{{basePath}}/{{infoPath}}</url>
-<content-type></content-type>
 <data-type>text</data-type>
       <header field="Secure-Token-Id" value="{{atsToken}}" />
       <header field="Authorization" value="{{authenticationHeader}}" />
@@ -127,14 +126,14 @@
     </Node>
 
 
-    <Node name="abort" log=""
-          type="com.itko.lisa.test.AbortStep" 
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
           version="1" 
-          uid="B9E159A0524311E8BE570242B9154533" 
+          uid="B9E159A2524311E8BE570242B9154533" 
           think="0h" 
           useFilters="true" 
           quiet="true" 
-          next="" > 
+          next="fail" > 
 
     </Node>
 
@@ -151,14 +150,14 @@
     </Node>
 
 
-    <Node name="end" log=""
-          type="com.itko.lisa.test.NormalEnd" 
+    <Node name="abort" log=""
+          type="com.itko.lisa.test.AbortStep" 
           version="1" 
-          uid="B9E159A2524311E8BE570242B9154533" 
+          uid="B9E159A0524311E8BE570242B9154533" 
           think="0h" 
           useFilters="true" 
           quiet="true" 
-          next="fail" > 
+          next="" > 
 
     </Node>
 
@@ -182,7 +181,7 @@
 </tr>
 <tr>
 <td>$.addOnsInfo.addOnsCount</td>
-<td>.+</td>
+<td>^\d+ Packages$</td>
 </tr>
 <tr>
 <td>$.addOnsInfo.addOns[*].priceUsd</td>
@@ -190,7 +189,7 @@
 </tr>
 <tr>
 <td>$.cdvrInfo.availableHours</td>
-<td>.+</td>
+<td>^\d+ Hours$</td>
 </tr>
 <tr>
 <td>$.cdvrInfo.priceUsd</td>
@@ -202,7 +201,7 @@
 </tr>
 <tr>
 <td>$.basePackageInfo.channelCount</td>
-<td>^\d+\+ Channels$</td>
+<td>^\d+\+ Live Channels$</td>
 </tr>
 </table>
     </DataSet>

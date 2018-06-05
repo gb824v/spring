@@ -15,6 +15,7 @@ import com.att.eg.profile.mysubscriptions.info.model.SubscriptionData;
 import com.att.eg.profile.mysubscriptions.info.model.UxReference;
 import com.att.eg.profile.mysubscriptions.info.service.QPUMSClient;
 import com.couchbase.client.java.util.LRUCache;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.HashMap;
@@ -25,6 +26,7 @@ import java.util.regex.Pattern;
 
 public class ResponseBuilderUtil {
 
+    private static final String STATUS_ACTIVE = "Active";
     private final YawlLogger log = new YawlLogger(ResponseBuilderUtil.class);
 
     //TODO: switch to use CouchBase for caching
@@ -99,6 +101,10 @@ public class ResponseBuilderUtil {
                 skuSubscriptionMap.put(subscription.getSku(), subscription);
             }
         }
+    }
+
+    public boolean isActive(Subscription subscription) {
+        return subscription != null && STATUS_ACTIVE.equals(subscription.getStatus());
     }
 
     public String getPackageTypeByReference(UxReference uxReference) {

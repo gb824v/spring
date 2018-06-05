@@ -1,44 +1,85 @@
 # profile-mysubscriptions-info
-## Status UNKNOWN
+[![Build Status](http://egjenkins-he.dtveng.net/job/PROF_mysubscriptions-info/job/master/badge/icon)](http://egjenkins-he.dtveng.net/job/PROF_mysubscriptions-info/job/master/)
 
 ## Synopsis
+**service/info**
 
-This is a sample service
+This service returns a JSON object containing information regarding user's subscriptions
 
-<!-- This section describes the service, providing an overview of the -->
-<!-- purpose and function, as well as specific limitations or exclusions if -->
-<!-- helpful (e.g. this service does not do 'x', see service 'xyz'). -->
+**service/carousel**
+
+This returns information required to create the my subscription carousels 
 
 
-## Code Examples
+## API end points for client
+**service/info**
+``` 
+https://api-staging.aeg.cloud/profile/mysubscriptions/info/service/info
+``` 
+**service/carousel**
+``` 
+https://api-staging.aeg.cloud/profile/mysubscriptions/info/service/carousel
+``` 
 
-Show how to call the service as concisely as possible. Developers
-should be able to figure out how the service solves their problem by
-looking at the code example. Make sure the API you describe is the
-obvious and main use case for the service, and that your example code
-is short and concise.
+## Request Parameters
+ \# | Name | Parameter Type | Required  | Description 
+------------ | ------------- | ------------- | ------------- | ------------- 
+1 | X-AEG-Profile-ID | Header |Mandatory | Unique profile identifier of the profile. Used to query couchbase for eProfile
+2 | Secure-Token-Id | Header | Mandatory | Token id used to get the session id from QPUMS
 
-``` http
-http://sandbox-kube.aeg.cloud/api/v1/proxy/namespaces/profile-mysubscriptions/services/https:info:443/service
+## Sample Response
+```json
+{
+    "basePackageInfo": {
+        "displayName": "Just Right",
+        "channelCount": "80+ Live Channels",
+        "priceUsd": "50.00",
+        "colorCode": {
+            "startCode": "C4EA80",
+            "endCode": "429321"
+        }
+    },
+    "addOnsInfo": {
+        "addOnsCount": "6 Packages",
+        "totalPriceUsd": "41.0",
+        "addOns": [{
+            "displayName": "HBO",
+            "channelId": 0,
+            "priceUsd": "5.00"
+        }, {
+            "displayName": "SHOWTIME",
+            "channelId": 0,
+            "priceUsd": "8.00"
+        }, {
+            "displayName": "CINEMAX",
+            "channelId": 0,
+            "priceUsd": "5.00"
+        }, {
+            "displayName": "STARZ",
+            "channelId": 0,
+            "priceUsd": "8.00"
+        }, {
+            "displayName": "Español",
+            "channelId": 0,
+            "priceUsd": "10.00"
+        }, {
+            "displayName": "Deportes",
+            "channelId": 0,
+            "priceUsd": "5.00"
+        }]
+    },
+    "nextBillingAmount": "60.00",
+    "cdvrInfo": {
+        "availableHours": "20 Hours",
+        "priceUsd": "0.00"
+    }
+}
 ```
-
 
 ## Dependencies & Prerequisites
 
-List all dependencies and prerequisites for the project.
+This service needs Couchbase and QPUMS to work properly
 
-
-## Triggers
-
-List specific issues that will have an impact on the roll-out of this
-service. For example, if new versions of this service can only be
-deployed to production during off-hours, etc.
-
-
-## Manual Test Cases
-
-List the manual tests that are required to certify this service - if
-any - and link to the additional test details.
 
 ## Functional Test Cases
 
@@ -53,14 +94,14 @@ Functional test cases are automatically executed by Jenkins and reported to Qmet
 
 ## See Also
 
-Links to additional documentation, if any.
+**Dev set up for testing In-App purchases**
+https://egconfluence.dtveng.net/pages/viewpage.action?pageId=48225536
 
 
 
 ## Project Information
-**Developers:**
-
-Owner: as966n
+### Developers:
+**Scrumbledore's Army** https://egconfluence.dtveng.net/display/ScrumDore/Scrumbledore%27s+Army+Home
 
 ### Build
 **Jenkins Job:** http://egjenkins-he.dtveng.net/job/PROF_mysubscriptions-info

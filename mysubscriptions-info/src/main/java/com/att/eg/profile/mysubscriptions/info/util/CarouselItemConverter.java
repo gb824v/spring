@@ -6,6 +6,7 @@ import com.att.eg.profile.mysubscriptions.info.model.CDvrInfo;
 import com.att.eg.profile.mysubscriptions.info.model.Product;
 import com.att.eg.profile.mysubscriptions.info.model.Resource;
 import com.att.eg.profile.mysubscriptions.info.model.Subscription;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -85,7 +86,7 @@ public class CarouselItemConverter {
     }
 
     private Resource convertCdvrProductToResource(Product product, Subscription subscription) {
-        boolean isCurrent = subscription != null;
+        boolean isCurrent = responseBuilderUtil.isActive(subscription);
         String price = isCurrent ? subscription.getRetailPrice() : product.getPrice();
         Resource resource = new Resource();
         resource.setResourceType(RESOURCE_TYPE_PACKAGE);
@@ -98,6 +99,7 @@ public class CarouselItemConverter {
     }
 
     private Resource convertAddOnProductToResource(Product product, Subscription subscription) {
+        //TODO: do we return only active? Leaving as is until further clarification
         boolean isCurrent = subscription != null;
         String price = isCurrent ? subscription.getRetailPrice() : product.getPrice();
         Resource resource = new Resource();
@@ -112,7 +114,7 @@ public class CarouselItemConverter {
     }
 
     public Resource convertBasePackageProductToResource(Product product, Subscription subscription) {
-        boolean isCurrent = subscription != null;
+        boolean isCurrent = responseBuilderUtil.isActive(subscription);
         String price = isCurrent ? subscription.getRetailPrice() : product.getPrice();
         String channelCount = responseBuilderUtil.parseChannelCount(product.getDescription());
         Resource resource = new Resource();

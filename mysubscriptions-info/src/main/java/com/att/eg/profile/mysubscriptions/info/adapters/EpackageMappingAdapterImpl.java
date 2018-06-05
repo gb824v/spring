@@ -1,16 +1,16 @@
-package com.att.eg.profile.mysubscriptions.info.service;
+package com.att.eg.profile.mysubscriptions.info.adapters;
 
-import com.att.ajsc.common.exception.BadRequestException;
 import com.att.eg.monitoring.annotations.statuscodes.CommonStatusCodes;
 import com.att.eg.monitoring.yawl.MetaBuilder;
 import com.att.eg.monitoring.yawl.YawlLogger;
-import com.att.eg.profile.mysubscriptions.info.common.dme.DME;
 import com.att.eg.profile.mysubscriptions.info.common.Constants;
 import com.att.eg.profile.mysubscriptions.info.common.FailureException;
 import com.att.eg.profile.mysubscriptions.info.common.MySubscriptionsInfoErrorType;
 import com.att.eg.profile.mysubscriptions.info.common.MySubscriptionsInfoStatusCodes;
+import com.att.eg.profile.mysubscriptions.info.common.dme.DME;
+import com.att.eg.profile.mysubscriptions.info.model.EpackageMappingResponse;
+import com.att.eg.profile.mysubscriptions.info.util.JsonUtils;
 
-import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StopWatch;
@@ -19,16 +19,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
-import javax.ws.rs.core.HttpHeaders;
-import javax.ws.rs.core.MultivaluedMap;
 import javax.ws.rs.core.Response;
 
-import static org.slf4j.LoggerFactory.*;
 
 @Service
-public class ChannelsDmeProviderImpl implements ChannelsDmeProvider {
-    private final YawlLogger yawl = new YawlLogger(ChannelsDmeProviderImpl.class);
-    private final Logger fLogger = getLogger(this.getClass().getPackage().getName());
+public class EpackageMappingAdapterImpl implements EpackageMappingAdapter {
+    private final YawlLogger yawl = new YawlLogger(EpackageMappingAdapterImpl.class);
     private DME dme;
     private Integer timeout;
     private String target;
@@ -39,15 +35,15 @@ public class ChannelsDmeProviderImpl implements ChannelsDmeProvider {
     private String dmePartner;
     private boolean isUseRouteOfferRequestHeaderFlag;
 
-    private ChannelsDmeProviderImpl(@Value("${channels.target}") String target,
-                                    @Value("${channels.path}") String path,
-                                    @Value("${channels.timeout}") Integer timeout,
-                                    @Value("${channels.version}") String version,
-                                    @Value("${channels.env.context}") String envContext,
-                                    @Value("${channels.routeOffer}") String routeOffer,
-                                    @Value("${channels.partner}") String dmePartner,
-                                    @Value("${channels.use.route.offer.request.header}") Boolean isUseRouteOfferRequestHeaderFlag,
-                                    DME dme) {
+    private EpackageMappingAdapterImpl(@Value("${epackagemapping.dme.target}") String target,//NOSONAR
+                                       @Value("${epackagemapping.dme.path}") String path,
+                                       @Value("${epackagemapping.dme.timeout}") Integer timeout,
+                                       @Value("${epackagemapping.dme.version}") String version,
+                                       @Value("${epackagemapping.dme.env.context}") String envContext,
+                                       @Value("${epackagemapping.dme.routeOffer}") String routeOffer,
+                                       @Value("${epackagemapping.dme.partner}") String dmePartner,
+                                       @Value("${epackagemapping.dme.use.route.offer.request.header}") Boolean isUseRouteOfferRequestHeaderFlag,
+                                       DME dme) {
         this.target = target;
         this.path = path;
         this.timeout = timeout;
@@ -60,48 +56,42 @@ public class ChannelsDmeProviderImpl implements ChannelsDmeProvider {
     }
 
     @Override
-    public DME.Response getChannels(HttpHeaders headers) {
-        DME.Response response = null;
-        MultivaluedMap<String, String> reqHeaders = headers.getRequestHeaders();
-        String token = reqHeaders.getFirst("x-aeg-profile-id");
+    public EpackageMappingResponse getPackage(String packageCode) {
+        EpackageMappingResponse epackageMappingResponse = null;
         try {
-
-            String clientURI = "http://"
+            String clientURI = Constants.HTTPS_PREFIX
                     + target
                     + path;
-            Map<String, String> headersMap = new HashMap<String, String>();
-            headersMap.put("x-aeg-profile-id", token);
-            headersMap.put("Content-Type", "application/json");
-            String payload = "{\"entitlements\": [],\"filters\": {\"subscription\": \"ALL\",\"channelType\": \"LINEAR\"}}";
+            Map<String, String> queryParams = new HashMap<>();
+            queryParams.put(Constants.PACKAGE_CODE, packageCode);
             DME.Params dmeParams = getDmeParams(
                     clientURI,
+                    queryParams,
                     null,
-                    headersMap,
+                    Constants.GET,
                     version,
                     envContext,
                     routeOffer,
                     timeout,
-                    payload,
+                    null,
                     dmePartner,
                     isUseRouteOfferRequestHeaderFlag);
-
-
-            response = callService(dmeParams);
-            int currentStatus = response.getCode();
-        } catch (BadRequestException e) {
-            yawl.debug(CommonStatusCodes.INVALID_INPUT_PARAMTERS,
-                    new MetaBuilder().fromException(e, this.getClass().getSimpleName()).create());
-
+            DME.Response response = callService(dmeParams);
+            if (response.getBody().startsWith("[") && response.getBody().endsWith("]")) {
+                epackageMappingResponse = parseResponse(response.getBody().substring(1, response.getBody().length() - 1));
+            }
 
         } catch (Exception e) {
-            System.out.println(e);
+            yawl.debug(CommonStatusCodes.INVALID_INPUT_PARAMTERS,
+                    new MetaBuilder().fromException(e, this.getClass().getSimpleName()).create());
         }
-        return response;
+        return epackageMappingResponse;
     }
+
 
     private DME.Response callService(DME.Params params) {
 
-        StopWatch stopWatch = new StopWatch("Discovery MySubscriptionsInfo Service StopWatch");
+        StopWatch stopWatch = new StopWatch("epackageMappingResponse Service StopWatch");
         DME.Response response = null;
         stopWatch.start();
 
@@ -110,11 +100,11 @@ public class ChannelsDmeProviderImpl implements ChannelsDmeProvider {
             stopWatch.stop();
         } catch (Exception e) {
             stopWatch.stop();
-            yawl.error(MySubscriptionsInfoStatusCodes.MULTI_PROGRAMS_DETAILS_FETCH_ERROR, new MetaBuilder()
+            yawl.error(MySubscriptionsInfoStatusCodes.PROGRAM_DETAILS_FETCH_ERROR, new MetaBuilder()
                     .setReason(e.getMessage())
                     .setNote("")
                     .fromException(e, this.getClass().getName())
-                    .setKeyAndValue(Constants.DME_PARAMS, params.toString())
+                    .setKeyAndValue(com.att.eg.profile.mysubscriptions.info.common.Constants.DME_PARAMS, params.toString())
                     .create());
             throw new FailureException(MySubscriptionsInfoErrorType.MULTI_PROGRAMS_FETCH_FAILURE, "DME Exception");
         }
@@ -130,8 +120,8 @@ public class ChannelsDmeProviderImpl implements ChannelsDmeProvider {
         //else
         yawl.error(MySubscriptionsInfoStatusCodes.INVALID_PROGRAM_OFFERING_RESPONSE, new MetaBuilder()
                 .setNote("program response failure invalid status")
-                .setKeyAndValue(Constants.DME_RESPONSE, Objects.toString(response))
-                .setKeyAndValue(Constants.DME_PARAMS, params.toString())
+                .setKeyAndValue(com.att.eg.profile.mysubscriptions.info.common.Constants.DME_RESPONSE, Objects.toString(response))
+                .setKeyAndValue(com.att.eg.profile.mysubscriptions.info.common.Constants.DME_PARAMS, params.toString())
                 .create());
 
         if (response.getCode() == Response.Status.NOT_FOUND.getStatusCode()) {
@@ -144,6 +134,7 @@ public class ChannelsDmeProviderImpl implements ChannelsDmeProvider {
     public static DME.Params getDmeParams(String clientUri, //NOSONAR
                                           Map<String, String> queryParams,
                                           Map<String, String> headers,
+                                          String method,
                                           String version,
                                           String envContext,
                                           String routeOffer,
@@ -153,7 +144,7 @@ public class ChannelsDmeProviderImpl implements ChannelsDmeProvider {
                                           boolean isUseRouteOfferRequestHeaderFlag) {
 
         return new DME.Params(
-                "POST",
+                method,
                 clientUri,
                 timeout,
                 null,
@@ -165,5 +156,22 @@ public class ChannelsDmeProviderImpl implements ChannelsDmeProvider {
                 routeOffer,
                 dmePartner,
                 isUseRouteOfferRequestHeaderFlag);
+    }
+
+    private EpackageMappingResponse parseResponse(String body) {
+        EpackageMappingResponse epackageMappingResponse;
+        JsonUtils jsonUtils = new JsonUtils();
+        try {
+            epackageMappingResponse = jsonUtils.getObject(body, EpackageMappingResponse.class);
+        } catch (Exception e) {
+            yawl.error(CommonStatusCodes.PARSING_FAILURE, new MetaBuilder()
+                    .setReason(e.getMessage())
+                    .setNote("Could not serialize e-package mapping")
+                    .setKeyAndValue(com.att.eg.profile.mysubscriptions.info.common.Constants.BODY, body)
+                    .fromException(e, this.getClass().getName())
+                    .create());
+            throw new FailureException(MySubscriptionsInfoErrorType.PROGRAM_PARSE_FAILURE, "Could not serialize Program Offerings");
+        }
+        return epackageMappingResponse;
     }
 }

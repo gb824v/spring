@@ -4,6 +4,7 @@ public class AddOn {
 	private String displayName;
 	private int channelId;
 	private String priceUsd;
+	private boolean isActive;
 	
 	public AddOn() {
 		// needed for deserializer
@@ -36,5 +37,13 @@ public class AddOn {
 
 	public void setPriceUsd(String priceUsd) {
 		this.priceUsd = priceUsd;
+	}
+
+	public boolean isActive() {
+		return isActive;
+	}
+
+	public void setActive(boolean isActive) {
+		this.isActive = isActive;
 	}
 }

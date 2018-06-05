@@ -95,6 +95,9 @@ public class MySubscriptionsInfoResponseBuilderTest {
 	private MySubscriptionsInfoResponse response;
 
 	private String profileId;
+	private SessionResponse sessionResponse;
+	private ProductsResponse productsResponse;
+	private ActiveSubscriptionsResponse activeSubscriptionsResponse;
 
 
 	@Before
@@ -102,6 +105,9 @@ public class MySubscriptionsInfoResponseBuilderTest {
 		mockEProfile = new EProfile();
 		ResponseBuilderUtil responseBuilderUtil = new ResponseBuilderUtil(qpumsClient);
 		responseBuilder = new MySubscriptionsInfoResponseBuilderImpl(mockCouchBaseDao, colorCodeBuilder, qpumsClient, responseBuilderUtil);
+		sessionResponse = null;
+		productsResponse = null;
+		activeSubscriptionsResponse = null;
 	}
 
 
@@ -187,9 +193,35 @@ public class MySubscriptionsInfoResponseBuilderTest {
 	@Test
 	public void builderReturnsCorrectInfoWhenResponseIsGeneratedFromSecureToken() throws Exception {
 		givenProfileIdIs(PROFILE_ID);
+		givenSessionResponseIs(MockResponses.SAMPLE_SESSION_RESPONSE);
+		givenProductsResponseIs(MockResponses.SAMPLE_PRODUCTS_RESPONSE);
+		givenActiveSubscriptionsResponseIs(MockResponses.SAMPLE_ACTIVE_SUBSCRIPTIONS_RESPONSE);
 		whenResponseIsBuiltUsingSecureToken();
 		thenDisplayNameIs("Go Big");
 		thenChannelCountIs("100+ Live Channels");
+	}
+
+	@Test
+	public void builderReturnsActiveSubscription() {
+		givenProfileIdIs(PROFILE_ID);
+		givenSessionResponseIs(MockResponses.SAMPLE_SESSION_RESPONSE);
+		givenProductsResponseIs(MockResponses.SAMPLE_PRODUCTS_RESPONSE);
+		givenActiveSubscriptionsResponseIs(MockResponses.SAMPLE_FINAL_BILL_ACTIVE_SUBSCRIPTIONS_RESPONSE);
+		whenResponseIsBuiltUsingSecureToken();
+		thenDisplayNameIs("Just Right");
+		thenChannelCountIs("80+ Live Channels");
+	}
+
+	private void givenActiveSubscriptionsResponseIs(String sampleName) {
+		activeSubscriptionsResponse = mockResponses.getMockActiveSubscriptionsResponse(sampleName);
+	}
+
+	private void givenProductsResponseIs(String sampleName) {
+		productsResponse = mockResponses.getMockProductsResponse(sampleName);
+	}
+
+	private void givenSessionResponseIs(String sampleName) {
+		sessionResponse = mockResponses.getMockSessionResponse(sampleName);
 	}
 
 	private void thenChannelCountIs(String count) {
@@ -226,9 +258,6 @@ public class MySubscriptionsInfoResponseBuilderTest {
 	}
 
 	private void whenResponseIsBuiltUsingSecureToken() {
-		SessionResponse sessionResponse = mockResponses.getMockSessionResponse();
-		ProductsResponse productsResponse = mockResponses.getMockProductsResponse();
-		ActiveSubscriptionsResponse activeSubscriptionsResponse = mockResponses.getMockActiveSubscriptionsResponse();
 		doReturn(sessionResponse).when(qpumsClient).getSession(any());
 		doReturn(productsResponse).when(qpumsClient).getProducts();
 		doReturn(activeSubscriptionsResponse).when(qpumsClient).getActiveSubscriptions(any());

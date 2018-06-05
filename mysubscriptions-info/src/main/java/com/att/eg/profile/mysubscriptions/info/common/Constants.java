@@ -4,6 +4,23 @@ package com.att.eg.profile.mysubscriptions.info.common;
  * Created by mguttman on 21/08/2017.
  */
 public class Constants {
+    public static final String TRANSACTION_ID = "x-att-transactionid";
+    public static final String X_AEG_ENTERTAINMENT_PROFILE = "x-aeg-entertainment-profile-id";
+    public static final String X_AEG_ACCOUNT_TOKEN = "x-aeg-account-token";
+    public static final String X_AEG_PROFILE_ID = "x-aeg-profile-id";
+    public static final String HTTPS_PREFIX = "https://";
+    public static final String PACKAGE_CODE = "packageCode";
+    public static final String POST = "POST";
+    public static final String GET = "GET";
+    public static final String OK = "200";
+    public static final String QUEUE_SIZE = "Queue_Size";
+    //Failure responses
+    public static final String NOT_OK = "received non 200 status code";
+    public static final String EXCEPTION = "exception occurred";
+    public static final String STATUS = "status:";
+    public static final String ATS_TOKEN = "DA:1524842238026:4AoxsvuYb4MiPyS2RePRfdI6yKM";
+    public static final String BASE_PRODUCT_PREFIX = "BASE";
+
     public static final String SERIES_ID = "SeriesID";
     public static final String CONTENT_ID = "ContentID";
     public static final String CHANNEL_ID = "ChannelID";
@@ -54,8 +71,11 @@ public class Constants {
     public static final String VIDEO_PROGRAM_ITEM_TYPE = "VIDEO_PROGRAM";
 
     public static final String SERIES_OFFERINGS_REQUEST_PARAMS = "SeriesOfferingsRequestParams";
-
-
+    public static final String PROFILE_ID = "ProfileId";
+    public static final String SECURE_TOKEN = "Secure Token";
+    public static final String SUBSCRIPTION_ID = "Subscription id";
+    public static final String ROUTE_OFFER = "Route Offer";
+    public static final String FISPROPERTIES = "fisProperties";
 
     private Constants() {
         //empty constructor to fix SonarQube error

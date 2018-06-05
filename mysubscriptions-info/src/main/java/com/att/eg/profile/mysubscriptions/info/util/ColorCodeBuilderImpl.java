@@ -1,8 +1,8 @@
 package com.att.eg.profile.mysubscriptions.info.util;
 
-import java.util.Locale;
-
 import com.att.eg.profile.mysubscriptions.info.model.ColorCode;
+
+import java.util.Locale;
 
 public class ColorCodeBuilderImpl implements ColorCodeBuilder {
 	public ColorCodeBuilderImpl() {

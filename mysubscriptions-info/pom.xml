@@ -33,6 +33,7 @@
         <doxygen.directory>${basedir}/target/classes/META-INF/resources/docs</doxygen.directory>
         <java.version>1.8</java.version>
         <docker.registry></docker.registry>
+        <powermock.version>1.6.6</powermock.version>
         <build.number>local</build.number>
         <functional.domain>profile</functional.domain>
         <functional.domain.alias>PROF</functional.domain.alias>
@@ -45,6 +46,7 @@
             http://10.223.14.119:8080/api/v1/proxy/namespaces/profile-mysubscriptions/services/https:info:443
         </proxy.target.url>
         <context.root>/</context.root>
+        <discovery-internal.version>1.0.29</discovery-internal.version>
     </properties>
 
     <developers>
@@ -54,6 +56,11 @@
     </developers>
 
     <dependencies>
+        <dependency>
+            <groupId>com.att.ajsc</groupId>
+            <artifactId>discovery-internal</artifactId>
+            <version>${discovery-internal.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.att.ajsc</groupId>
             <artifactId>yawl</artifactId>
@@ -77,11 +84,29 @@
         </dependency>
         <dependency>
             <groupId>com.att.ajsc</groupId>
+            <artifactId>sdk-java-fis</artifactId>
+            <version>5.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.att.ajsc</groupId>
             <artifactId>yawl</artifactId>
         </dependency>
         <dependency>
             <groupId>com.att.ajsc</groupId>
             <artifactId>sdk-java-monitoring</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-module-junit4</artifactId>
+            <version>${powermock.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-api-mockito</artifactId>
+            <version>${powermock.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.att.ajsc</groupId>
