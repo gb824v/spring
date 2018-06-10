@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Javascript async="false" continueOnError="false" enabled="true" timeLimit="200" name="Compute-Route-Offer">
-    <DisplayName>Compute-Route-Offer</DisplayName>
-    <Properties/>
-    <ResourceURL>jsc://Compute-Route-Offer.js</ResourceURL>
-</Javascript>

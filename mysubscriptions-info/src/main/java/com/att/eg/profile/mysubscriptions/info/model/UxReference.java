@@ -1,8 +1,0 @@
-package com.att.eg.profile.mysubscriptions.info.model;
-
-public enum UxReference {
-    MYSUBSCRIPTIONS_CHANNELPACKAGESREFERENCE,
-    MYSUBSCRIPTIONS_ADDONSREFERENCE,
-    MYSUBSCRIPTIONS_TRUECLOUDSTORAGEREFERENCE;
-
-}

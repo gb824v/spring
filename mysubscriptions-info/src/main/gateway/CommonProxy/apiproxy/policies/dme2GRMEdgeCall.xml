@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<JavaCallout name="dme2GRMEdgeCall">
-    <ClassName>com.att.ajsc.apigeedme2.DME2Handler</ClassName>
-    <ResourceURL>java://@apigee.dme.jar@</ResourceURL>
-</JavaCallout>

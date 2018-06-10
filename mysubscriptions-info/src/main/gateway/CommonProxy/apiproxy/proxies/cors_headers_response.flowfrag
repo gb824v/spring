@@ -1,6 +1,0 @@
-<Step>
-    <Name>getCorsOrigins</Name>
-</Step>
-<Step>
-	<Name>Add-CORS</Name>
-</Step>

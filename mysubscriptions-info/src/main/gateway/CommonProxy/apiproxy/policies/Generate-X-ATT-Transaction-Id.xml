@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Javascript async="false" continueOnError="false" enabled="true" timeLimit="200" name="Generate-X-ATT-Transaction-Id">
-    <DisplayName>Generate-X-ATT-Transaction-Id</DisplayName>
-    <Properties/>
-    <ResourceURL>jsc://Generate-X-ATT-Transaction-Id.js</ResourceURL>
-</Javascript>
