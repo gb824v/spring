@@ -11,7 +11,7 @@ import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
 
-@ContextConfiguration("resetAssureContext.xml")
+@ContextConfiguration("classpath:resetAssureContext.xml")
 public class ResetAssureTest extends AbstractTestNGSpringContextTests {
     @Autowired
     ApplicationConfiguration conf;

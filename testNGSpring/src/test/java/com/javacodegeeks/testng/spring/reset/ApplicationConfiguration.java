@@ -6,15 +6,15 @@ import org.springframework.context.annotation.PropertySource;
 @Configuration
 @PropertySource("classpath:application.properties")
 public class ApplicationConfiguration {
-    @Value("${reset.accesstoken}")
+    @Value("${rest.accesstoken}")
     private String accesstoken;
-    @Value("${reset.appid}")
+    @Value("${rest.appid}")
     private String appid;
 
-    @Value("${reset.authn_url}")
+    @Value("${rest.authn_url}")
     private String authn_url;
 
-    @Value("${reset.dng_host}")
+    @Value("${rest.dng_host}")
     private String dng_host;
 
     public String getAccesstoken() {
