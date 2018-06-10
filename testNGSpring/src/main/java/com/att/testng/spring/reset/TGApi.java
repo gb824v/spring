@@ -1,4 +1,5 @@
-package com.att.testng.spring.reset; /**
+package com.att.testng.spring.reset;
+/**
  * Author: Guy Bitan
  */
 import java.util.HashMap;
