@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 
 public class TGApi {
     private String tgHost = "tstagesms.stage.att.net";
-    private String tgAppId = "nOWy2AeO5BKaF5pSostw/ocJscw=";
+    private String tgAppId = "F8LZ2DSQLX6RDIHDStbn5Vy8oAg=";
     private String tgPort = "443";
     private String tgUrl = "/commonLogin/nxsATS/TokenGen";
     private String user = "qayslid_020717319663930400151";
@@ -45,7 +45,7 @@ public class TGApi {
             Header header = new Header("Content-Type", "application/x-www-form-urlencoded");
             params.put("client_id", euthNClientId);
             params.put("tToken", accessToken);
-            Response response = given().header(header).when().post(url, params);
+            Response response = given().header(header).queryParams(params).when().post(url);
             accessToken = new JsonPath(response.asString()).get("access_token");
         }
         return accessToken;
@@ -67,7 +67,7 @@ public class TGApi {
         params.put("appID", tgAppId);
         params.put("rememberId", tgRememberId);
         params.put("respType", restType);
-        Response response = given().header(header).when().post(url, params);
+        Response response = given().header(header).queryParams(params).when().post(url);
         return new JsonPath(response.asString());
 
     }
