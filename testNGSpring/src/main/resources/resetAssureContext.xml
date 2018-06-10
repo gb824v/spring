@@ -4,6 +4,8 @@
 		xmlns:context="http://www.springframework.org/schema/context"
 		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
 				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
-	<bean id="conf" class="com.javacodegeeks.testng.spring.reset.ApplicationConfiguration">
+	<bean id="conf" class="ApplicationConfiguration">
+</bean>
+	<bean id="tgApi" class="TGApi">
 	</bean>
 </beans>
