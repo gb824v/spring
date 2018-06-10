@@ -2,6 +2,8 @@ package com.att.testng.spring.reset;
 /**
  * Author: Guy Bitan
  */
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.util.HashMap;
 
 import io.restassured.http.Header;
@@ -9,22 +11,30 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
 
+
 public class TGApi {
-    private String tgHost = "tstagesms.stage.att.net";
-    private String tgAppId = "F8LZ2DSQLX6RDIHDStbn5Vy8oAg=";
-    private String tgPort = "443";
-    private String tgUrl = "/commonLogin/nxsATS/TokenGen";
-    private String user = "qayslid_020717319663930400151";
-    private String password="test1ng";
-    private String tgop = "TokenGen";
-    private String tgRememberId = "off";
-    private String authNPort = "443";
-    private String euthNClientId = "DTV_WEB";
-    private String restType ="json";
-    private String url = "https://api-stage.aeg.cloud/authn-token";
+    @Autowired
+    ApplicationConfiguration conf;
+
+    private String tgHost =conf.getTgHost();
+    private String tgAppId = conf.getTgAppId();
+    private String tgPort = conf.getTgPort();
+    private String tgUrl = conf.getTgUrl();
+    private String user = conf.getUser();
+    private String password=conf.getPassword();
+    private String tgop = conf.getTgop();
+    private String tgRememberId = conf.getTgRememberId();
+    private String authNPort = conf.getAuthNPort();
+    private String euthNClientId = conf.getEuthNClientId();
+    private String restType =conf.getRestType();
+    private String url = conf.getStage_url();
     private String authNUrl="/" + url.split("/")[3];
     private String authNhost=url.split("/")[2];
     private String accessToken;
+
+
+    public TGApi() {
+    }
 
     /**
      * Get tguard access token. 1 - Gets tguard token by calling tguard token
@@ -71,4 +81,6 @@ public class TGApi {
         return new JsonPath(response.asString());
 
     }
+
+
 }
