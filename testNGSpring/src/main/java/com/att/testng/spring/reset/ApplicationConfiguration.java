@@ -1,10 +1,15 @@
+package com.att.testng.spring.reset;
+
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
-@Configuration
+
 @PropertySource("classpath:application.properties")
+@Configuration
 public class ApplicationConfiguration {
+
     @Value("${rest.accesstoken}")
     private String accesstoken;
     @Value("${rest.appid}")

@@ -1,14 +1,11 @@
-/**
+package com.att.testng.spring.reset; /**
  * Author: Guy Bitan
  */
-
-
 import java.util.HashMap;
 
 import io.restassured.http.Header;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-
 import static io.restassured.RestAssured.given;
 
 public class TGApi {
