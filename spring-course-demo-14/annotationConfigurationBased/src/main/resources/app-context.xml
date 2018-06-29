@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="lowerTaxRate" class="pukteam.course.spring.taxes.calculator.TaxLimit">
+        <constructor-arg index="0" value="10000"/>
+        <constructor-arg index="1" value="20"/>
+    </bean>
+
+    <bean id="upperTaxRate" class="pukteam.course.spring.taxes.calculator.TaxLimit">
+        <constructor-arg name="lowerBoundIncome" value="20000"/>
+        <constructor-arg name="taxPercent" value="30"/>
+    </bean>
+
+</beans>

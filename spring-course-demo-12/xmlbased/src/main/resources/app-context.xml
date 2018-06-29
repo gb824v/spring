@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
+
+    <bean id="lowerTaxRate" class="pukteam.course.spring.taxes.calculator.TaxLimit">
+        <constructor-arg index="0" value="10000"/>
+        <constructor-arg index="1" value="20"/>
+    </bean>
+
+    <bean id="upperTaxRate" class="pukteam.course.spring.taxes.calculator.TaxLimit">
+        <constructor-arg name="lowerBoundIncome" value="20000"/>
+        <constructor-arg name="taxPercent" value="30"/>
+    </bean>
+
+    <util:list id="taxRates" list-class="java.util.LinkedList">
+        <ref bean="lowerTaxRate"/>
+        <bean class="pukteam.course.spring.taxes.calculator.TaxLimit">
+            <constructor-arg index="0" value="15000"/>
+            <constructor-arg index="1" value="25"/>
+        </bean>
+        <ref bean="upperTaxRate"/>
+    </util:list>
+
+    <bean id="taxCalculatorFactory"
+          class="pukteam.course.spring.taxes.calculator.TaxCalculatorFactory"
+          factory-method="obtainFactory">
+        <constructor-arg value="1000"/>
+    </bean>
+
+    <bean id="calculatorFromFactory"
+          factory-bean="taxCalculatorFactory"
+          factory-method="obtainCalculator" autowire="constructor">
+    </bean>
+
+    <bean id="menash" class="pukteam.course.spring.taxes.model.Person"
+            init-method="initializationValidation" destroy-method="destruction">
+        <constructor-arg name="id" value="1"/>
+        <constructor-arg name="income" value="4000"/>
+        <property name="age" value="14"/>
+        <property name="gender" value="MALE"/>
+        <property name="status" value="SINGLE_PARENT"/>
+        <property name="counter" ref="incomeRequestCounter"/>
+    </bean>
+
+    <bean id="tikva" class="pukteam.course.spring.taxes.model.Person"
+          p:age="25"
+          p:gender="FEMALE"
+          p:status="SINGLE"
+          p:counter-ref="incomeRequestCounter"
+          init-method="initializationValidation" destroy-method="destruction">
+        <constructor-arg index="0" value="2"/>
+        <constructor-arg index="1" value="40000"/>
+    </bean>
+
+    <bean id="simcha" class="pukteam.course.spring.taxes.model.Person"
+          init-method="initializationValidation" destroy-method="destruction">
+        <constructor-arg name="id" value="3"/>
+        <constructor-arg index="1" value="40000"/>
+        <property name="age" value="30"/>
+        <property name="gender" value="OTHER"/>
+        <property name="status" value="MARRIED"/>
+        <property name="counter" ref="incomeRequestCounter"/>
+    </bean>
+
+    <util:map id="personList">
+        <entry>
+            <key>
+                <value>menash</value>
+            </key>
+            <ref bean="menash"/>
+        </entry>
+        <entry>
+            <key>
+                <value>tikva</value>
+            </key>
+            <ref bean="tikva"/>
+        </entry>
+        <entry>
+            <key>
+                <value>simcha</value>
+            </key>
+            <ref bean="simcha"/>
+        </entry>
+    </util:map>
+
+    <bean id="incomeRequestCounter"
+          class="pukteam.course.spring.taxes.model.Counter"
+          scope="prototype"/>
+
+    <bean id="a" class="pukteam.course.spring.autowire.A" autowire="constructor"/>
+
+    <bean id="b" class="pukteam.course.spring.autowire.B" autowire="byType"/>
+
+    <bean id="c" class="pukteam.course.spring.autowire.C"/>
+
+    <bean class="pukteam.course.spring.taxes.model.PersonMapBeansPostProcessor"/>
+
+    <bean class="pukteam.course.spring.taxes.CountBeansBeanFactoryPostProcessor"/>
+</beans>
