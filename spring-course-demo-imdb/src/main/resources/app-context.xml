@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="guyId" class="com.course.spring.imdb.model.Actor">
+        <property name="id" value="20" />
+        <property name="name" value="Guy" />
+        <property name="gender" value="MALE" />
+        <property name="age" value="40" />
+    </bean>
+    <bean id="ilanId" class="com.course.spring.imdb.model.Actor"
+        p:id="25"
+        p:name="Ilan"
+        p:gender="MALE"
+        p:age="50">
+    </bean>
+    <bean id="hilaId" class="com.course.spring.imdb.model.Actor"
+        p:id="25"
+        p:name="Hila"
+        p:gender="FEMALE"
+        p:age="30">
+    </bean>
+
+
+    <bean id="parkHyuraId" class="com.course.spring.imdb.model.Movie">
+        <constructor-arg index="0" value="20"/>
+        <constructor-arg index="1" value="ParkHyura"/>
+        <constructor-arg index="2" value="COMEDY"/>
+
+        <property name="mainActor" ref="guyId"/>
+        <property name="secondaryActor" ref="ilanId"/>
+    </bean>
+
+    <bean id="starWarId" class="com.course.spring.imdb.model.Movie">
+        <constructor-arg index="0" value="20"/>
+        <constructor-arg index="1" value="star war"/>
+        <constructor-arg index="2" value="ACTION"/>
+
+        <property name="mainActor" ref="hilaId"/>
+        <property name="secondaryActor" ref="guyId"/>
+    </bean>
+
+    <bean id="Oceans-8" class="com.course.spring.imdb.model.MovieList">
+        <constructor-arg index="0" value="20"/>
+        <constructor-arg index="1" value="star war"/>
+        <constructor-arg index="2" value="ACTION"/>
+        <property name="actors" ref="actorsList"/>
+    </bean>
+
+    <util:list id="actorsList" list-class="java.util.LinkedList">
+        <ref bean="guyId"/>
+        <ref bean="ilanId"/>
+        <ref bean="hilaId"/>
+    </util:list>
+
+    <util:map id="actorsMap">
+    <entry>
+        <key>
+            <value>10</value>
+        </key>
+        <ref bean="guyId"/>
+    </entry>
+    <entry>
+        <key>
+            <value>11</value>
+        </key>
+        <ref bean="ilanId"/>
+    </entry>
+    <entry>
+        <key>
+            <value>12</value>
+        </key>
+        <ref bean="hilaId"/>
+    </entry>
+</util:map>
+
+    <util:map id="movieMap">
+        <entry>
+            <key>
+                <value>10</value>
+            </key>
+            <ref bean="parkHyuraId"/>
+        </entry>
+        <entry>
+            <key>
+                <value>11</value>
+            </key>
+            <ref bean="starWarId"/>
+        </entry>
+        <entry>
+            <key>
+                <value>12</value>
+            </key>
+            <ref bean="Oceans-8"/>
+        </entry>
+    </util:map>
+</beans>
