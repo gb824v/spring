@@ -1,8 +1,8 @@
-package com.course.spring.imdb.main;
+package com.course.xml.spring.imdb;
 
-import com.course.spring.imdb.model.Actor;
-import com.course.spring.imdb.model.Movie;
-import com.course.spring.imdb.model.MovieList;
+import com.course.xml.spring.imdb.model.Actor;
+import com.course.xml.spring.imdb.model.Movie;
+import com.course.xml.spring.imdb.model.MovieList;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -15,7 +15,6 @@ import java.util.Map;
 public class Main {
 
     private static Logger logger = LogManager.getLogger(Main.class);
-
     public static void main(String[] args) {
 
         ApplicationContext ctx = new ClassPathXmlApplicationContext("app-context.xml");

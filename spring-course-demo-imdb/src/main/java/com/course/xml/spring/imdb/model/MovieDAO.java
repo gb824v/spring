@@ -1,4 +1,4 @@
-package com.course.spring.imdb.model;
+package com.course.xml.spring.imdb.model;
 
 import java.util.HashMap;
 import java.util.Map;

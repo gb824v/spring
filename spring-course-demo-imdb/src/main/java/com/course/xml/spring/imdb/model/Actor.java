@@ -1,4 +1,4 @@
-package com.course.spring.imdb.model;
+package com.course.xml.spring.imdb.model;
 
 public class Actor {
 
