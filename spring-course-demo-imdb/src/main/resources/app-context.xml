@@ -6,19 +6,19 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
-    <bean id="guyId" class="com.course.xml.spring.imdb.model.Actor">
+    <bean id="guyId" class="com.course.spring.xml.imdb.model.Actor">
         <property name="id" value="20" />
         <property name="name" value="Guy" />
         <property name="gender" value="MALE" />
         <property name="age" value="40" />
     </bean>
-    <bean id="ilanId" class="com.course.xml.spring.imdb.model.Actor"
+    <bean id="ilanId" class="com.course.spring.xml.imdb.model.Actor"
         p:id="25"
         p:name="Ilan"
         p:gender="MALE"
         p:age="50">
     </bean>
-    <bean id="hilaId" class="com.course.xml.spring.imdb.model.Actor"
+    <bean id="hilaId" class="com.course.spring.xml.imdb.model.Actor"
         p:id="25"
         p:name="Hila"
         p:gender="FEMALE"
@@ -26,7 +26,7 @@
     </bean>
 
 
-    <bean id="parkHyuraId" class="com.course.xml.spring.imdb.model.Movie">
+    <bean id="parkHyuraId" class="com.course.spring.xml.imdb.model.Movie">
         <constructor-arg index="0" value="20"/>
         <constructor-arg index="1" value="ParkHyura"/>
         <constructor-arg index="2" value="COMEDY"/>
@@ -35,7 +35,7 @@
         <property name="secondaryActor" ref="ilanId"/>
     </bean>
 
-    <bean id="starWarId" class="com.course.xml.spring.imdb.model.Movie">
+    <bean id="starWarId" class="com.course.spring.xml.imdb.model.Movie">
         <constructor-arg index="0" value="20"/>
         <constructor-arg index="1" value="star war"/>
         <constructor-arg index="2" value="ACTION"/>
@@ -44,7 +44,7 @@
         <property name="secondaryActor" ref="guyId"/>
     </bean>
 
-    <bean id="Oceans-8" class="com.course.xml.spring.imdb.model.MovieList">
+    <bean id="Oceans-8" class="com.course.spring.xml.imdb.model.MovieList">
         <constructor-arg index="0" value="20"/>
         <constructor-arg index="1" value="star war"/>
         <constructor-arg index="2" value="ACTION"/>

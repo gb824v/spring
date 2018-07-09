@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8bf8f45c-6d4d-4201-ac33-eafb0cea9e97" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/introduction/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/api/Engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/api/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/api/Wheel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/impl/container/Container.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/impl/engine/BoxEngine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/impl/engine/V8Engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/impl/vehicle/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/impl/vehicle/CircusBicycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/impl/wheel/RaceWheel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/impl/wheel/TerrainWheel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/fullcontrol/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/fullcontrol/component/Engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/fullcontrol/component/Wheel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/fullcontrol/vehicle/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/fullcontrol/vehicle/CircusBicycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/fullcontrol/vehicle/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/springway/SpringRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/introduction/src/main/resources/ApplicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/xmlbased/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/autowire/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/autowire/AutowireMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/autowire/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/autowire/C.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/CountBeansBeanFactoryPostProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/calculator/TaxCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/calculator/TaxCalculatorFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/calculator/TaxCalculatorImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/calculator/TaxLimit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/main/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/model/Counter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/model/Gender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/model/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/model/PersonMapBeansPostProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/model/Status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/xmlbased/src/main/resources/app-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-13.1/xmlbased/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction/src/main/java/pukteam/course/spring/di/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction/src/main/java/pukteam/course/spring/di/api/Engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction/src/main/java/pukteam/course/spring/di/api/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction/src/main/java/pukteam/course/spring/di/api/Wheel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction/src/main/java/pukteam/course/spring/di/impl/container/Container.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction/src/main/java/pukteam/course/spring/di/impl/engine/BoxEngine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction/src/main/java/pukteam/course/spring/di/impl/engine/V8Engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction/src/main/java/pukteam/course/spring/di/impl/vehicle/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction/src/main/java/pukteam/course/spring/di/impl/vehicle/CircusBicycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction/src/main/java/pukteam/course/spring/di/impl/wheel/RaceWheel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction/src/main/java/pukteam/course/spring/di/impl/wheel/TerrainWheel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction/src/main/java/pukteam/course/spring/fullcontrol/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction/src/main/java/pukteam/course/spring/fullcontrol/component/Engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction/src/main/java/pukteam/course/spring/fullcontrol/component/Wheel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction/src/main/java/pukteam/course/spring/fullcontrol/vehicle/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction/src/main/java/pukteam/course/spring/fullcontrol/vehicle/CircusBicycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction/src/main/java/pukteam/course/spring/fullcontrol/vehicle/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction/src/main/java/pukteam/course/spring/springway/SpringRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction/src/main/resources/ApplicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xmlbased/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xmlbased/src/main/java/pukteam/course/spring/autowire/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xmlbased/src/main/java/pukteam/course/spring/autowire/AutowireMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xmlbased/src/main/java/pukteam/course/spring/autowire/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xmlbased/src/main/java/pukteam/course/spring/autowire/C.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xmlbased/src/main/java/pukteam/course/spring/taxes/CountBeansBeanFactoryPostProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xmlbased/src/main/java/pukteam/course/spring/taxes/calculator/TaxCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xmlbased/src/main/java/pukteam/course/spring/taxes/calculator/TaxCalculatorFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xmlbased/src/main/java/pukteam/course/spring/taxes/calculator/TaxCalculatorImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xmlbased/src/main/java/pukteam/course/spring/taxes/calculator/TaxLimit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xmlbased/src/main/java/pukteam/course/spring/taxes/main/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xmlbased/src/main/java/pukteam/course/spring/taxes/model/Counter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xmlbased/src/main/java/pukteam/course/spring/taxes/model/Gender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xmlbased/src/main/java/pukteam/course/spring/taxes/model/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xmlbased/src/main/java/pukteam/course/spring/taxes/model/PersonMapBeansPostProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xmlbased/src/main/java/pukteam/course/spring/taxes/model/Status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xmlbased/src/main/resources/app-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xmlbased/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-14/annotationConfigurationBased/src/main/java/pukteam/course/spring/taxes/conf/TaxRateConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-course-demo-14/annotationConfigurationBased/src/main/java/pukteam/course/spring/taxes/conf/TaxRateConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-imdb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-course-demo-imdb/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-imdb/src/main/java/com/course/xml/spring/imdb/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-imdb/src/main/java/com/course/xml/spring/imdb/model/Actor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-imdb/src/main/java/com/course/xml/spring/imdb/model/Gender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-imdb/src/main/java/com/course/xml/spring/imdb/model/Genre.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-imdb/src/main/java/com/course/xml/spring/imdb/model/Movie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-imdb/src/main/java/com/course/xml/spring/imdb/model/MovieDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-imdb/src/main/java/com/course/xml/spring/imdb/model/MovieList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-course-demo-imdb/src/main/resources/app-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-course-demo-imdb/src/main/resources/app-context.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pukteam/course/spring/taxes/main/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonsConfiguration.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pukteam/course/spring/taxes/conf/PersonsConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pukteam/course/spring/taxes/model/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="800">
+              <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../../android/TGVolley/app" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/pukteam/course/spring/taxes/conf/PersonsConfiguration.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="annotationConfigurationBased" type="b2602c69:ProjectViewProjectNode" />
+              <item name="annotationConfigurationBased" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="annotationConfigurationBased" type="b2602c69:ProjectViewProjectNode" />
+              <item name="annotationConfigurationBased" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="annotationConfigurationBased" type="b2602c69:ProjectViewProjectNode" />
+              <item name="annotationConfigurationBased" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="annotationConfigurationBased" type="b2602c69:ProjectViewProjectNode" />
+              <item name="annotationConfigurationBased" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="annotationConfigurationBased" type="b2602c69:ProjectViewProjectNode" />
+              <item name="annotationConfigurationBased" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="taxes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="annotationConfigurationBased" type="b2602c69:ProjectViewProjectNode" />
+              <item name="annotationConfigurationBased" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="annotationConfigurationBased" type="b2602c69:ProjectViewProjectNode" />
+              <item name="annotationConfigurationBased" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="annotationConfigurationBased" type="b2602c69:ProjectViewProjectNode" />
+              <item name="annotationConfigurationBased" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="annotationConfigurationBased" type="b2602c69:ProjectViewProjectNode" />
+              <item name="annotationConfigurationBased" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8bf8f45c-6d4d-4201-ac33-eafb0cea9e97" name="Default" comment="" />
+      <created>1530697975315</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1530697975315</updated>
+      <workItem from="1530697976520" duration="1325000" />
+      <workItem from="1530709048008" duration="2641000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3966000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="Regex Tester" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" visible="true" weight="0.32978722" />
+      <window_info active="true" anchor="right" id="Maven Projects" order="3" visible="true" weight="0.32975295" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25349087" />
+      <window_info anchor="bottom" id="Tail" order="7" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32975295" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pukteam/course/spring/taxes/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pukteam/course/spring/taxes/model/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pukteam/course/spring/taxes/conf/PersonsConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="26" column="74" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pukteam/course/spring/taxes/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pukteam/course/spring/taxes/model/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pukteam/course/spring/taxes/conf/PersonsConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

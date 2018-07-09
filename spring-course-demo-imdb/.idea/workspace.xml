@@ -1,7 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41e98ba4-70c9-4f33-a207-e804d5a1d49d" name="Default" comment="" />
+    <list default="true" id="41e98ba4-70c9-4f33-a207-e804d5a1d49d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/introduction/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/api/Engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/api/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/api/Wheel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/impl/container/Container.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/impl/engine/BoxEngine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/impl/engine/V8Engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/impl/vehicle/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/impl/vehicle/CircusBicycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/impl/wheel/RaceWheel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/di/impl/wheel/TerrainWheel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/fullcontrol/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/fullcontrol/component/Engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/fullcontrol/component/Wheel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/fullcontrol/vehicle/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/fullcontrol/vehicle/CircusBicycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/fullcontrol/vehicle/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/introduction/src/main/java/pukteam/course/spring/springway/SpringRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/introduction/src/main/resources/ApplicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/xmlbased/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/autowire/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/autowire/AutowireMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/autowire/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/autowire/C.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/CountBeansBeanFactoryPostProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/calculator/TaxCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/calculator/TaxCalculatorFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/calculator/TaxCalculatorImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/calculator/TaxLimit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/main/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/model/Counter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/model/Gender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/model/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/model/PersonMapBeansPostProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/xmlbased/src/main/java/pukteam/course/spring/taxes/model/Status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/xmlbased/src/main/resources/app-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.1/xmlbased/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/introduction/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/introduction/src/main/java/pukteam/course/spring/di/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/introduction/src/main/java/pukteam/course/spring/di/api/Engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/introduction/src/main/java/pukteam/course/spring/di/api/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/introduction/src/main/java/pukteam/course/spring/di/api/Wheel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/introduction/src/main/java/pukteam/course/spring/di/impl/container/Container.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/introduction/src/main/java/pukteam/course/spring/di/impl/engine/BoxEngine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/introduction/src/main/java/pukteam/course/spring/di/impl/engine/V8Engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/introduction/src/main/java/pukteam/course/spring/di/impl/vehicle/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/introduction/src/main/java/pukteam/course/spring/di/impl/vehicle/CircusBicycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/introduction/src/main/java/pukteam/course/spring/di/impl/wheel/RaceWheel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/introduction/src/main/java/pukteam/course/spring/di/impl/wheel/TerrainWheel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/introduction/src/main/java/pukteam/course/spring/fullcontrol/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/introduction/src/main/java/pukteam/course/spring/fullcontrol/component/Engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/introduction/src/main/java/pukteam/course/spring/fullcontrol/component/Wheel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/introduction/src/main/java/pukteam/course/spring/fullcontrol/vehicle/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/introduction/src/main/java/pukteam/course/spring/fullcontrol/vehicle/CircusBicycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/introduction/src/main/java/pukteam/course/spring/fullcontrol/vehicle/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/introduction/src/main/java/pukteam/course/spring/springway/SpringRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/introduction/src/main/resources/ApplicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/xmlbased/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/xmlbased/src/main/java/pukteam/course/spring/autowire/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/xmlbased/src/main/java/pukteam/course/spring/autowire/AutowireMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/xmlbased/src/main/java/pukteam/course/spring/autowire/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/xmlbased/src/main/java/pukteam/course/spring/autowire/C.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/xmlbased/src/main/java/pukteam/course/spring/taxes/CountBeansBeanFactoryPostProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/xmlbased/src/main/java/pukteam/course/spring/taxes/calculator/TaxCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/xmlbased/src/main/java/pukteam/course/spring/taxes/calculator/TaxCalculatorFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/xmlbased/src/main/java/pukteam/course/spring/taxes/calculator/TaxCalculatorImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/xmlbased/src/main/java/pukteam/course/spring/taxes/calculator/TaxLimit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/xmlbased/src/main/java/pukteam/course/spring/taxes/main/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/xmlbased/src/main/java/pukteam/course/spring/taxes/model/Counter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/xmlbased/src/main/java/pukteam/course/spring/taxes/model/Gender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/xmlbased/src/main/java/pukteam/course/spring/taxes/model/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/xmlbased/src/main/java/pukteam/course/spring/taxes/model/PersonMapBeansPostProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/xmlbased/src/main/java/pukteam/course/spring/taxes/model/Status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/xmlbased/src/main/resources/app-context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-13.2/xmlbased/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-course-demo-14/annotationConfigurationBased/src/main/java/pukteam/course/spring/taxes/conf/TaxRateConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-course-demo-14/annotationConfigurationBased/src/main/java/pukteam/course/spring/taxes/conf/TaxRateConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/Actor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/Gender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/Genre.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/Movie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/MovieDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/MovieList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/app-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/app-context.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,35 +100,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/Main.java">
+      <file leaf-file-name="Actor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/xml/imdb/model/Actor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="1025">
+              <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Actor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/Actor.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/Actor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="600">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gender.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/Gender.java">
+      <file leaf-file-name="DisposableBeanAdapter.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.6.RELEASE/spring-beans-5.0.6.RELEASE.jar!/org/springframework/beans/factory/support/DisposableBeanAdapter.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            <state relative-caret-position="5150">
+              <caret line="206" column="66" selection-start-line="206" selection-start-column="66" selection-end-line="206" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractAutowireCapableBeanFactory.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.6.RELEASE/spring-beans-5.0.6.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="31025">
+              <caret line="1241" selection-start-line="1241" selection-end-line="1241" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Genre.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/Genre.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/Genre.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="50">
               <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
@@ -49,38 +145,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MovieDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/MovieDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MovieList.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/MovieList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Movie.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/Movie.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/Movie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="250">
+              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app-context.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/app-context.xml">
+      <file leaf-file-name="ActorConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/conf/ActorConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="38" column="47" lean-forward="true" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+            <state relative-caret-position="225">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/main/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActorMapBeansPostProcessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/ActorMapBeansPostProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -93,6 +198,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
@@ -121,6 +229,15 @@
         <option value="$PROJECT_DIR$/src/main/java/XML/main/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/Actor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/Movie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/conf/TaxConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/conf/Configuration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/Counter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/ActorMapBeansPostProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/course/spring/xml/imdb/model/Actor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/Actor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/conf/ActorConfiguration.java" />
       </list>
     </option>
   </component>
@@ -133,17 +250,19 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="width" value="1378" />
-    <option name="height" value="780" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,12 +293,37 @@
               <item name="spring-course-demo-imdb" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-course-demo-imdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-course-demo-imdb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-course-demo-imdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-course-demo-imdb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-course-demo-imdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-course-demo-imdb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
@@ -188,7 +332,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-course-demo-13.1/annotationConfigurationBased" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -198,10 +342,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.course.spring.anotation.imdb.main" />
+      <recent name="com.course.spring.anotation.imdb.model" />
+      <recent name="com.course.spring.anotation.imdb.conf" />
       <recent name="com.course.spring.imdb.model" />
       <recent name="pukteam.course.spring.imdb.main" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GitHub\spring\spring-course-demo-imdb\src\main\java\com\course\spring\anotation\imdb\model" />
       <recent name="C:\AT&amp;T\spring-course-demo-imdb\src\main\resources" />
       <recent name="C:\AT&amp;T\spring-course-demo-imdb\src\main\java" />
     </key>
@@ -218,9 +366,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.course.spring.anotation.imdb.main.Main" />
+      <module name="spring-course-demo-imdb" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.course.spring.anotation.imdb.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.course.xml.spring.imdb.Main" />
@@ -274,8 +433,13 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -292,30 +456,31 @@
       <updated>1530435111310</updated>
       <workItem from="1530435112633" duration="10721000" />
       <workItem from="1530526775155" duration="3122000" />
-      <workItem from="1530627182684" duration="903000" />
+      <workItem from="1530627182684" duration="12779000" />
+      <workItem from="1530709045387" duration="3018000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14746000" />
+    <option name="totallyTimeSpent" value="29640000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="TODO" order="15" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Regex Tester" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" side_tool="true" visible="true" weight="0.32967034" />
       <window_info anchor="right" id="Maven Projects" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="11" weight="0.3296371" />
+      <window_info anchor="bottom" id="Version Control" order="5" />
+      <window_info anchor="bottom" id="Run" order="11" weight="0.32857144" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.24489796" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.24865736" />
       <window_info anchor="bottom" id="Tail" order="7" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
@@ -323,17 +488,17 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="12" weight="0.4" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="6" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Messages" order="6" weight="0.32967034" />
       <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
-      <window_info id="Image Layers" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="SonarLint" order="4" />
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
-      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info id="Image Layers" order="1" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.3296371" />
     </layout>
     <layout-to-restore>
@@ -354,7 +519,6 @@
       <window_info anchor="bottom" id="Messages" order="6" />
       <window_info anchor="bottom" id="SonarLint" order="4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Tail" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
       <window_info anchor="right" id="Maven Projects" order="0" />
@@ -366,8 +530,9 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
       <window_info anchor="bottom" id="Regex Tester" order="3" />
+      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
+      <window_info anchor="bottom" id="Tail" order="7" />
       <window_info anchor="bottom" id="Debug" order="12" weight="0.4" />
     </layout-to-restore>
   </component>
@@ -379,25 +544,109 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/Actor.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/Actor.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/xml/imdb/model/Actor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/Actor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.6.RELEASE/spring-beans-5.0.6.RELEASE.jar!/org/springframework/beans/factory/support/DisposableBeanAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5150">
+          <caret line="206" column="66" selection-start-line="206" selection-start-column="66" selection-end-line="206" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.6.RELEASE/spring-beans-5.0.6.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31025">
+          <caret line="1241" selection-start-line="1241" selection-end-line="1241" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/Genre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/ActorMapBeansPostProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/conf/ActorConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="61" lean-forward="true" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/xml/imdb/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/MovieDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/xml/imdb/model/MovieDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="14" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/Movie.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/xml/imdb/model/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
@@ -411,14 +660,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/xml/imdb/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1000">
           <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/MovieDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/xml/imdb/model/MovieDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="14" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="14" />
@@ -432,7 +681,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/Movie.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/xml/imdb/model/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
@@ -440,75 +689,141 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pukteam/course/spring/imdb/model/Status.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-226">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/Enum.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/Object.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/app-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="38" column="47" lean-forward="true" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/xml/imdb/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/Actor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/Gender.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/xml/imdb/model/Genre.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/Genre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/Movie.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/xml/imdb/model/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/MovieDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/xml/imdb/model/MovieDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/xml/spring/imdb/model/MovieList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/xml/imdb/model/MovieList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
+        <state relative-caret-position="551">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/MovieDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/app-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/Counter.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/Gender.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/xml/imdb/model/Gender.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/Genre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/ActorMapBeansPostProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/xml/imdb/model/Actor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.6.RELEASE/spring-beans-5.0.6.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31025">
+          <caret line="1241" selection-start-line="1241" selection-end-line="1241" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.6.RELEASE/spring-beans-5.0.6.RELEASE.jar!/org/springframework/beans/factory/support/DisposableBeanAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5150">
+          <caret line="206" column="66" selection-start-line="206" selection-start-column="66" selection-end-line="206" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/model/Actor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/conf/ActorConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/course/spring/anotation/imdb/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
         </state>
       </provider>
     </entry>
